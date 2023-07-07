@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Studio Yoga</title>
+ <link rel="icon" type="img/favicon" href="img/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- icones -->
+<link rel="stylesheet" type="text/css" href="C:\Users\User\Desktop/fontawesome/css/all.min.css">
+<!-- fontawesome/css/all.min.css -->
+
+  <!-- fonte -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&family=Gabriela&family=Handlee&family=Overlock&display=swap" rel="stylesheet">
+
+<style>
+ 
+/* Style the body */
+body {
+  font-family: 'Gabriela', serif;
+  background-color: black;
+  margin: 0;
+  color: 
+}
+
+h2 {
+  color: #9A9FE3; 
+  font-size: 40px;
+}
+
+h3 {
+  color: #E8ACFD;
+  font-size: 25px;
+  margin-left: 150px;
+}
+
+p {
+  color: #C4B7F9;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading -- FOTO DO TOPO */
+.header {
+  display: block;
+  height: 800px;
+  background-color: gray;
+  background-image: url("img/foto1.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: top; 
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  position: static;
+  background-color: black;
+  background-position: top;
+  top: 0;
+  }
+
+/* Style the navigation bar links */
+.navbar a {
+  float: right;
+  display: block;
+  color: #BD9AE3;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #CABAD9;
+  color: #2E2842;
+}
+
+/*SPAZIO YOGA*/
+.logo {
+  color: #BD9AE3;
+  float: left;
+  text-align: left;
+  font-size: small;
+  margin-left: 20px;
+  }
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.row2 {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: black;
+  padding: 20px;
+}
+
+.side2 {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: black;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: black;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg1 {
+  background-color: #aaa;
+  padding: 150px 250px ;
+  margin: 50px 150px ;
+  background-image: url("img/foto3.jpg");
+  opacity: 0.5;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  float: left;
+  border-radius: 5px;
+}
+
+.fakeimg2 {
+  background-color: #aaa;
+  padding: 650px 270px ;
+  margin: 50px 150px ;
+  background-image: url("img/foto4.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: bottom;
+  opacity: 0.5;
+  float: right;
+  border-radius: 5px;
+}
+
+.fakeimg3 {
+/*background-color: #aaa;
+  /*background-image: url("img/foto2.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  opacity: 0.5;*/
+  padding: 100px 500px;
+  margin: 100px 150px ;
+  float: center;
+
+}
+
+/* Footer */
+.footer {
+  padding: 50px;
+  text-align: center;
+  background-color: #37314A;
+  background-image: linear-gradient(to top, #37314A, black);
+
+ }
+
+ .depoimento {
+  border-radius: 600px; 
+  width: 220px; 
+  height: 220px;
+  margin: 100px;
+
+ }
+
+/*SLIDE SHOW*/
+ * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1180px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .row2 {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+  <!-- BARRA DE NAVEGAÇÃO -->
+  <div class="navbar">
+  <a href="#sabermais">Saber mais</a>
+  <a href="#yoga">Yoga</a>
+  <a href="#sobre">Sobre nós</a>
+  <div class="logo">
+    <h2> Spazio Yoga</h2>
+    <!-- <img src="img/logo1.png" style="width: 200 height: 300;" > -->
+  </div>
+</div>
+
+<!-- DIV DA IMG DE TOPO, não sei o que colocar dentro -->
+<div class="header">  
+</div>
+
+<!-- DIV DA SEGUNDA FOTO(SOBRE O SPAZIO YOGA) -->
+<div class="row">
+  <div class="side">
+        <div class="fakeimg1" style="max-width: 400 height: 500;">
+        </div>
+  <h2 id="sobre" style="text-align: center; margin-right: 150px;">Sobre o Spazio Yoga</h2>      
+  <p style="font-size: 20px; margin-right: 150px; ">Somos um espaço que busca a harmonização do ser nos âmbitos físico, mental e espiritual, através da prática de yoga. O grande foco do Studio é a busca do autoconhecimento através da liberação da consciência. Existem muitos tipos de Yoga, mas o nosso trabalho sempre se baseia em técnicas corporais, exercícios de respiração, métodos de relaxamento e concentração, além de muita meditação.</p>   
+  </div>
+</div>
+
+<!-- DIV DA TERCEIRA FOTO(TIPOS DE YOGA) -->
+  <div class="main">
+    <div class="fakeimg2">
+    </div>
+    <h2 id="yoga" style="text-align: left; margin-left: 150px">Tipos de Yoga</h2>
+
+    <h3>Hatha Yoga</h3>
+    <p style="margin-left: 150px;">
+      É considerada a vertente clássica do Ioga e, também, uma das mais populares, pois a prática espiritual usa ásanas (posturas físicas) e pranayamas (exercícios respiratórios) como meio para melhorar o condicionamento físico, fortalecer o copo e aumentar a flexibilidade.
+    </p>
+
+    <h3>Kundalini Yoga</h3>
+    <p style="margin-left: 150px;">
+      Esse é um tipo bastante reflexivo, individual e contemplativo de Ioga. Os ásanas do Hatha Yoga são usados, mas com diferentes ritmos de respiração, o que estimula a liberação da energia que se concentra na base da coluna (ou Primeiro Chakra). Com isso, equilibram-se os demais Chakras, atingindo-se níveis elevados de consciência, de bem-estar e de plenitude. Tem forte ligação com a Ayurveda, aumentando a conexão da mente com o corpo.
+    </p>
+
+    <h3>Iyengar Yoga</h3>
+    <p style="margin-left: 150px;">
+      Esse tipo de Ioga busca o alinhamento do corpo, da mente e do espírito por meio da respiração e da permanência nas posturas. Por causa disso, a prática promove flexibilidade e força, o que evita lesões e eleva o estado de equilíbrio e a consciência corporal. O ritmo é ditado pelo praticante e esse estilo também é recomendado para quem está iniciando, para quem deseja corrigir a postura ou para quem tem qualquer limitação física.
+    </p>
+
+    <h3>Ashtanga Yoga</h3>
+    <p style="margin-left: 150px;">
+      O Ashtanga Yoga enfatiza a sincronização dos movimentos posturais com a respiração em seis séries de ásanas fixos que formam uma sequência a ser repetida na mesma ordem. As posturas são bastante desafiadoras e o praticante só passa para a série seguinte após ter dominado a anterior. O avanço é determinado pela capacidade de cada pessoa e os exercícios são mais intensos e estimulantes, conferindo força e flexibilidade. A respiração profunda e contínua aumenta a consciência corporal.
+    </p>
+
+    <h3>Raja Yoga</h3>
+    <p style="margin-left: 150px;">
+      Também conhecido como Ioga Real, esse estilo está intimamente ligado ao desenvolvimento do lado espiritual e menos focado no esforço físico. Por isso, os ásanas não são muito desafiadores, mas como a prática dá ênfase para o controle mental, esse tipo é indicado para quem já tem o hábito de meditar.
+    </p>
+
+    <h3>Tai Yoga</h3>
+    <p style="margin-left: 150px;">
+      Essa é uma prática bastante antiga, mas só agora tem recebido atenção do público. Também é conhecida como Tai Yoga Massagem, pois os ásanas são mantidos pelo instrutor. Ou seja, os fundamentos dos movimentos e da respiração do Ioga estão presentes, mas é o terapeuta quem estimula as posturas no praticante, que fica imóvel. É um tipo passivo de Ioga, que também tem os benefícios da massagem na sua execução. Não tem contraindicação e é extremamente relaxante.
+    </p>
+  </div>
+
+<!-- DIV DA ULTIMA FOTO -->
+
+<!--<div class="row2"> -->
+  <div class="side2">
+        
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="img/aula01.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/aula02.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/aula03.jpg" style="width:100%">
+  </div>
+
+   <div class="mySlides fade">
+    <img src="img/aula04.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!--</div> -->
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+
+  <br>
+  <h2 id="sabermais" style="text-align: center; float: center;">Saber mais</h2>      
+  <p style="font-size: 20px; text-align: center; margin-left: 150px; margin-right: 150px">
+    Ficaremos muito felizes em você fazer parte dessa imersão de auto conhecimento. Para saber mais, entre em contato conosco pelas nossas redes sociais, e lhe explicaremos tudinho. Venha transformar o seu eu interior.
+  </p>   
+  <br>
+  <h2 style="text-align: center; float: center;font-size: 30px;">O lugar que você procura, existe!</h2>
+  <p style="text-align: center;"> _________</p>
+
+  <!--
+  <img class="depoimento" src="img/dp1.jpg" style="margin-left: 200px; float: left;">
+  <img class="depoimento" src="img/dp2.jpg" style="margin: 100px; float: center">
+  <img class="depoimento" src="img/dp3.jpg" style="margin-right: 200px; float: right;">
+
+  <div class="depoimento">
+  <p style="margin-left: 200px float: left;"> 
+    "Aqui eu vi que tem esse acolhimento mesmo, seja qual for o seu momento na yoga, na jornada. Isso é uma coisa que me conquistou"
+  </p>
+  </div>
+-->
+
+</div>
+
+
+
+<!-- RODAPÉ -->
+<div class="footer">
+    <p>
+       <!-- MAPA ENDEREÇO --> 
+ <iframe style="float: right; margin-right: 200px; border-radius: 5px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13865.98687563066!2d-51.142832767629145!3d-29.676375412281587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95194251364dc5e9%3A0xd7dd3c17203b1805!2sBourbon%20Shopping%20Novo%20Hamburgo!5e0!3m2!1spt-BR!2sbr!4v1686063077347!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+  </p>
+  <!-- ENDEREÇO E TELEFONE -->
+  <p style="margin-left: 200px; line-height: 40px;"> Av Nações Unidas 2001, Rio Branco<br>
+  Novo Hamburgo - RS, 93320-021  <br>
+  (51) 4004-1828<br>
+  <!-- ICONES -->
+   <i style="font-size: 38px; padding: 10px;" class="fa-brands fa-instagram"></i>
+   <i style="font-size: 38px; padding: 10px;" class="fa-brands fa-facebook"></i>
+   <i style="font-size: 38px; padding: 10px;" class="fa-brands fa-whatsapp"></i>
+</p>
+<!-- DIREITOS AUTORAIS -->
+<p style="text-align: center; font-size: 12px;">
+  © SPAZIO YOGA - 2023 - Todos os direitos reservados.
+</p>
+</div>
+
+</body>
+</html>
